@@ -5,20 +5,7 @@ const server = createServer((req, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/json');
 
-  let arreglo = [
-    {
-      nombre:"Juan",
-      apellido:"Perez"
-    },
-    {
-      nombre:"Mario",
-      apellido:"Bross"
-    },
-    {
-      nombre: "Juan",
-      apellido: "Flores"
-    }
-  ]
+  let arreglo = [[1, 1],[1, 1],[1, 1],[1, 1],[1, 1],[0, 1],[1, 1],[1, 1],[1, 1],[1, 1],[1, 1]]
 
   res.write(JSON.stringify(arreglo));
 
